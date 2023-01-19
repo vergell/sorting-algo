@@ -1,12 +1,33 @@
 <html>
   <head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
   </head>
   <body>
-    <header>
-      <h1 id="text">Sorting Algorithms</h1>
-    </header>
+    <nav>
+      <div class="nav-wrapper cyan">
+        <a href="#" class="brand-logo">Sorting algorithm </a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li>
+            <form action="#">
+              <p class="range-field">
+                <input type="range" id="test5" min="5" max="25" />
+              </p>
+            </form>
+          </li>
+          <li>
+            <a class="waves-effect waves-light btn" id="shuffles">Shuffle</a>
+          </li>
+          <li>
+            <a class="waves-effect waves-light btn" id="bubble">Bubble Sort</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <div class="canvas">
       <script src="sketch.js"></script>
       <script src="lines.js"></script>
